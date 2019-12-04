@@ -10,6 +10,7 @@ class Followers extends Component {
         axios
         .get(`https://api.github.com/users/schoell411/followers`)
         .then(result => {
+            console.log(result);
             this.setState({
                 followers: result.data
             })

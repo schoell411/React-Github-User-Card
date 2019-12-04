@@ -6,7 +6,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h1>GitHub Followers</h1>
       <User />
+      <h2>Followers:</h2>
       <Followers />
     </div>
   );

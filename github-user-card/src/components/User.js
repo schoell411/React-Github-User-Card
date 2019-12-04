@@ -10,6 +10,7 @@ class User extends Component {
         axios
         .get(`https://api.github.com/users/schoell411`)
         .then(result => {
+            console.log(result);
             this.setState({
                 name: result.data.name,
                 img: result.data.avatar_url
