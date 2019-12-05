@@ -9,7 +9,9 @@ function App() {
       <h1>GitHub Followers</h1>
       <User />
       <h2>Followers:</h2>
-      <Followers />
+      <div className="follower-list">
+        <Followers />
+      </div>
     </div>
   );
 }

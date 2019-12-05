@@ -13,7 +13,8 @@ class User extends Component {
             console.log(result);
             this.setState({
                 name: result.data.name,
-                img: result.data.avatar_url
+                img: result.data.avatar_url,
+                github: result.data.html_url
             })
         })
         .catch (error => console.log(error))
@@ -22,7 +23,7 @@ class User extends Component {
     render (){
         return(
             <div>
-                <UserCard name={this.state.name} img={this.state.img} />
+                <UserCard name={this.state.name} img={this.state.img} github={this.state.github} />
             </div>
         )
     }

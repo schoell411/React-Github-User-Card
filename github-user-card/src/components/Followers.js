@@ -22,7 +22,9 @@ class Followers extends Component {
         return(
             <div>
                 {this.state.followers.map (follower => (
-                    <FollowersCard key={follower.id}
+                    <FollowersCard 
+                        key={follower.id}
+                        github={follower.html_url}
                         name={follower.login}
                         img={follower.avatar_url}
                     />

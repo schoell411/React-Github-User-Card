@@ -46,3 +46,7 @@ h2 {
   text-decoration: underline;
   /* background-color: antiquewhite; */
 }
+
+.followers-card a, .user-card a {
+  color: antiquewhite;
+}
